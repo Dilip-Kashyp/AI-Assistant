@@ -1,4 +1,4 @@
-# Intelligent Assistant using OpenAI GPT-3.5 Turbo
+# Intelligent Assistant
 
 This Python script implements an Intelligent Assistant using OpenAI's GPT-3.5 Turbo model for natural language processing. The assistant is capable of performing various tasks, including answering questions, opening websites, playing YouTube videos, checking the time, sending WhatsApp messages, providing news headlines, and engaging in conversation.
 
