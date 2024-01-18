@@ -42,7 +42,7 @@ def listening():
             print(f"User said: {query}")
             return query
         except Exception as e:
-            return 'An exception occurred: %s', e
+            return 'how can i say "speak more clearly" in formal way '
 
 
 if __name__ == '__main__':
