@@ -14,7 +14,7 @@ chatStr = ""
 def chat(query):
     global chatStr
     openai.api_key = apikey
-    chatStr += f"User: {query}\n AI Assistant:"
+    chatStr += f"User: {query}\n Intelligent Assistant:"
     response = openai.Completion.create(
         model="gpt-3.5-turbo-instruct",
         prompt=chatStr,
@@ -46,7 +46,6 @@ def listening():
 
 
 if __name__ == '__main__':
-    speaker.Speak("Hiiii, i am AI Assistant, How Can i help you sirr..")
     while True:
         query = listening()
         if f"Sorry".lower() in query:
