@@ -42,15 +42,13 @@ def listening():
             print(f"User said: {query}")
             return query
         except Exception as e:
-            return 'how can i say "speak more clearly" in formal way '
+            return 'sorry, try again, speak clearly'
 
 
 if __name__ == '__main__':
+    speaker.Speak("hello, i am Intelligent Assistant. how can i help you sirr.... ")
     while True:
         query = listening()
-        if f"Sorry".lower() in query:
-            listening()
-
         sites = [["youtube", "https://www.youtube.com"], ["google", "https://www.google.com"],
                  ["wikipedia", "https://www.wikipedia.com"], ["facebook", "https://www.facebook.com"]]
         for site in sites:
