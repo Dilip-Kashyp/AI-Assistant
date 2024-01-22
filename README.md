@@ -35,7 +35,7 @@ This Python script implements an Intelligent Assistant using OpenAI's GPT-3.5 Tu
 
 3. Run the script:
    ```bash
-   python intelligent_assistant.py
+   python main.py
    ```
 
 ## Usage
