@@ -1,8 +1,9 @@
 # Intelligent Assistant
 
-This Python script implements an Intelligent Assistant using OpenAI's GPT-3.5 Turbo model for natural language processing. The assistant is capable of performing various tasks, including answering questions, opening websites, playing YouTube videos, checking the time, sending WhatsApp messages, providing news headlines, and engaging in conversation.
+This Python script implements an Intelligent Assistant using OpenAI's GPT-3.5 Turbo model for natural language processing. The assistant is capable of performing various tasks, including answering questions, opening websites, playing YouTube videos, checking the time, sending WhatsApp messages, providing news headlines, and engaging in conversation.AI Assistant designed to perform a variety of tasks through voice commands and a user interface.
 
 ## Features
+- **Intelligent Conversations:** Engages in intelligent conversations using OpenAI's GPT-3.5 Turbo. Falls back to a custom generative model if needed.
 
 - **Voice Interaction:** Utilizes the `speech_recognition` library to listen for user commands through the microphone.
 
@@ -20,11 +21,15 @@ This Python script implements an Intelligent Assistant using OpenAI's GPT-3.5 Tu
 
 - **Polite Exit:** Politely exits the program when the user says "thank you."
 
+  ### Prerequisites
+
+- Python 3.6 or later
+
 ## Setup
 
 1. Install required packages using the following command:
    ```bash
-   pip install web-browser datetime2 openai==0.28 requests SpeechRecognition pyttsx3 pywhatkit pyaudio
+   pip install web-browser datetime2 openai==0.28 requests SpeechRecognition pyttsx3 pywhatkit pyaudio eel google.generativeai
    ```
 
 2. Obtain OpenAI API key and save it in `api_key.py`:
@@ -33,10 +38,13 @@ This Python script implements an Intelligent Assistant using OpenAI's GPT-3.5 Tu
    apikey = "your_openai_api_key_here"
    ```
 
-3. Run the script:
-   ```bash
-   python main.py
-   ```
+3 Run the application:
+
+    ```bash
+    python run.py
+    ```
+
+4 Access the UI at [http://localhost:8000/index.html](http://localhost:8000/index.html).
 
 ## Usage
 
@@ -54,6 +62,15 @@ This Python script implements an Intelligent Assistant using OpenAI's GPT-3.5 Tu
    - "Chat with AI"
 
 4. Politely exit by saying "Thank you."
+### Directory Structure
+
+- `UI/`: Contains HTML and JavaScript files for the user interface.
+- `Services/`: Holds utility functions for listening, speaking, and interacting with external services.
+- `command.py`: Defines the primary functionality of the AI Assistant.
+- `main.py`: Entry point of the application.
+- `run.py`: For runinng app
+- `controller.js`: Manages UI interactions and communicates with the backend.
+- `eel.js`: Eel library script for integrating the Python backend with the UI.
 
 ## Additional Notes
 
