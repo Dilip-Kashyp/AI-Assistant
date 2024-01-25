@@ -24,7 +24,7 @@ This Python script implements an Intelligent Assistant using OpenAI's GPT-3.5 Tu
 
 1. Install required packages using the following command:
    ```bash
-   pip install web-browser datetime2 openai requests SpeechRecognition pywin32 pywhatkit
+   pip install web-browser datetime2 openai==0.28 requests SpeechRecognition pyttsx3 pywhatkit pyaudio
    ```
 
 2. Obtain OpenAI API key and save it in `api_key.py`:
@@ -35,7 +35,7 @@ This Python script implements an Intelligent Assistant using OpenAI's GPT-3.5 Tu
 
 3. Run the script:
    ```bash
-   python intelligent_assistant.py
+   python main.py
    ```
 
 ## Usage
