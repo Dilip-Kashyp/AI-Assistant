@@ -35,7 +35,8 @@ This Python script implements an Intelligent Assistant using OpenAI's GPT-3.5 Tu
 2. Obtain OpenAI API key and save it in `api_key.py`:
    ```python
    # api_key.py
-   apikey = "your_openai_api_key_here"
+   api_key1 = "your_openai_api_key_here" // Google API
+   api_key2 = "your_openai_api_key_here" // openAI
    ```
 
 3 Run the application:
