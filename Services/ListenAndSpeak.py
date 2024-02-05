@@ -21,7 +21,7 @@ def listening():
     with mic.Microphone() as source:
         reco.adjust_for_ambient_noise(source)
         reco.pause_threshold = 1
-        reco.energy_threshold = 300
+        reco.energy_threshold = 200
         status = "Speak now Listening......."
         print(f"{status}")
         eel.DisplayMessage(f"{status}")

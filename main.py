@@ -2,7 +2,7 @@ import os
 import eel
 
 from command import *
-
+from textrespone import *
 
 def start():
     eel.init("UI")

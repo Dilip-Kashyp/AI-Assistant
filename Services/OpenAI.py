@@ -1,8 +1,10 @@
 import google.generativeai as genai
 import openai
+import eel
 from Services.ListenAndSpeak import Speak
 from Services.api_key import api_key1, api_key2
 genai.configure(api_key = api_key1)
+
 
 def AI(query):
     try:

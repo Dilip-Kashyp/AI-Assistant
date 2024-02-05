@@ -32,3 +32,9 @@ $(document).ready(function () {
 
  
 });
+
+
+function getText() {
+    var query = document.getElementById("textInput").value;
+    eel.textrepo(query)
+}

@@ -1,4 +1,3 @@
-import multiprocessing
 from main import start
 
 
@@ -7,8 +6,6 @@ def startai():
         start()
         
 if __name__ == '__main__':
-        p1 = multiprocessing.Process(target=startai)
-        p1.start()
-        p1.join()
+        startai()
         print("system stop")   
         
